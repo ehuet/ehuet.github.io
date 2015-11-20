@@ -2,13 +2,16 @@
 <html>
 <body>
 
-<p id="timer">TIMER</p>	
+<p id="timer">0</p>	
 
-<button type="button" id="startTimer" onclick="count()">Start Timer</button>
+<button type="button" id="startTimer" onclick="setTimeout(count,1000)">Start Timer</button>
+
+var t = 0
 
 <script>
 function count() {
-	document.getElementById("timer").innerHTML = "counting";
+	t++;
+	document.getElementById("timer").innerHTML = t;
 } 
 
 
