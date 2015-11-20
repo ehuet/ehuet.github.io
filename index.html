@@ -4,13 +4,14 @@
 
 <p id="timer">0:00</p>	
 
-<button type="button" id="startTimer" onclick="setInterval(count,1000)">Start Timer</button>
-<button type ="button" id="stopTimer" onclick="clearInterval(seconds)">Stop Timer</button>
+<button type="button" id="startTimer" onclick="myVar">Start Timer</button>
+<button type ="button" id="stopTimer" onclick="clearInterval(myVar)">Stop Timer</button>
 
 <script>
 
 var seconds = 0;
 var minutes = 0;
+var myVar = setInterval("count,1000")
 
 function count() {
 	seconds++;
